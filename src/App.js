@@ -5,11 +5,13 @@ import Ingresar from './paginas/Ingresar';
 import Registro from './paginas/Registro';
 import Ofertas from './paginas/Ofertas';
 import OlvidePassword from './paginas/OlvidePassword';
+import Cabecera from './componentes/Cabecera';
 
 function App() {
   return (
     <>
       <Router>
+        <Cabecera />
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/perfil' element={<Perfil />} />
